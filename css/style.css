@@ -1,0 +1,150 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.maior{
+    font-size: 2rem;
+}
+dd{
+    font-size: 1.8rem;
+}
+
+/*  */
+
+/* título */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title{
+    padding: 2rem 2rem 0rem 2rem;
+    font-size: 4rem;
+}
+
+.main-subtittle{
+    padding: 2rem 2rem 4rem 2rem;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+/*  */
+
+/* introdução */
+
+.intro{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.intro-tittle{
+    padding: 2rem;
+    font-size: 2.8rem;
+}
+.intro-text{
+    margin: 0rem 2rem 2rem 3rem;
+}
+.intro-content{
+    padding: 0rem 2rem 2rem 5rem;
+}
+
+/*  */
+
+/* FAQ */
+
+.faq{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.faq .titulo{
+    padding: 1.4rem 1.4rem .8rem 1.4rem;
+}
+.faq-lista .last{
+    margin-bottom: 1.4rem;
+}
+.faq-lista dt{
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: #e54;
+}  
+.faq-lista dt::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #fb5;
+}
+.faq-lista dd{
+    font-family: Arial;
+    margin-bottom: .5rem;
+    margin-left: 30px;
+}
+.js-accordion dd{
+    display: none;
+}
+.js-accordion dt{
+    cursor: pointer;
+}
+.js-accordion dt::after{
+    content: '⮧';
+    margin-left: 10px;
+}
+.js-accordion dt.ativo::after{
+    content: '⮥';
+    margin-left: 10px;
+}
+.js-accordion dd.ativo{
+    display: block;
+    animation: slideDown .5s forwards;
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    to{
+        opacity: 1;
+        max-height: 200px; 
+        /* prestar atenção no max-height para não bugar o conteúdo */
+    }
+}
+/*  */
+
+/* importancia */
+
+.titulo-import{
+    padding: 2rem 2rem;
+}
+
+
+/*  */
+
+/* conclusão */
+
+.conclusao{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.conclusao h2{
+    margin-bottom: 1.2rem;
+}.conclusao p{
+    margin-bottom: 2rem;
+}
+/*  */
